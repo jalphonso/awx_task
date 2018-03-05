@@ -7,6 +7,8 @@ services:
       - rabbitmq
       - memcached
       - postgres
+    ports:
+      - "80:8052"
     hostname: awxweb
     user: root
     restart: unless-stopped
@@ -74,7 +76,7 @@ services:
     image: postgres:9.6
     restart: unless-stopped
     volumes:
-      - /tmp/pgdocker:/var/lib/postgresql/data:Z
+      - /srv/postgres:/var/lib/postgresql/data:Z
     environment:
       POSTGRES_USER: awx
       POSTGRES_PASSWORD: awxpass
