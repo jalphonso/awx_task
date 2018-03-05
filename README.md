@@ -1,4 +1,5 @@
-This repository is used to modify the awx_task VM to include packages for Junos Automation for Juniper equipment
+This repository is used to modify the awx_task VM to include packages for Junos Automation for Juniper equipment.
+
 If you use Docker Compose, you can modify the docker-compose.yml file to your environment's needs and then issue
 ```
 docker-compose up
