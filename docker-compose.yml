@@ -84,7 +84,7 @@ services:
       timeout: 30s
       retries: 3
     volumes:
-      - /srv/postgres:/var/lib/postgresql/data:Z
+      - ./postgres:/var/lib/postgresql/data:Z
     environment:
       POSTGRES_USER: awx
       POSTGRES_PASSWORD: awxpass
